@@ -3,6 +3,37 @@ layout: post
 title: "Work Environment with Manjaro"
 ---
 
+This is a record about how to configure a Linux environment for work after getting a whole new pc, NOT include macOSX.
+
+- Generate SSH key if needed
+  ```shell
+  ssh-keygen -t rsa -b 4096
+  ```
+
+- Change `bash` to `zsh`
+  ```shell
+  chsh -s $(which zsh)
+  ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page: About]({{ site.baseurl }}/about).
