@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: post
 title: Pressure Testing
 ---
 
-### High privilege with `stres` and `nmon`
----
+High privilege with `stres` and `nmon`
+
 #### Installation
 ```shell
 apt install stress
