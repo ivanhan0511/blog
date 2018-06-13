@@ -3,7 +3,7 @@ layout: post
 title: FreeBSD
 ---
 
-#### FreeBSD System Only
+FreeBSD System Only
 
 - Install FreeBSD (Until now, Sep 08, 2017, FreeBSD12.0 armv8)
 - Enable ssh for remote login
