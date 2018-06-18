@@ -7,6 +7,7 @@ url: "https://ivanhan0511.github.io" # change this to the base hostname & protoc
 
 google_analytics:
 # cayman-blog date format
+  ivan-blog date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 Ivan-blog:
   date_format: "%b %-d, %Y"
@@ -18,10 +19,10 @@ author: "Ivan Han"
 image: /thumbnail-jumbo.png
 twitter:
   username: ivanhan0511
-#  site:
+  site: http://ivanhan0511.github.io/blog
 #facebook:
   #publisher: 1592372034171500
   #profile_id: 1809805629
   #app_id: 1798910940422432 # cayman-blog
   #authors: lorepirri
-#  admins:
+  #admins:
