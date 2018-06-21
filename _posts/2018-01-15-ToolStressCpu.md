@@ -31,7 +31,7 @@ sensors
 
 UnixBench搜索网站，其中有下载，需要down到本地并编译安装
 
-```shell
+``shell
 cd 
 # 并不需要`configure`
 make

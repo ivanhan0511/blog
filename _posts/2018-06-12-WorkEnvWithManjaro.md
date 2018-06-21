@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Work Environment with Manjaro"
+title: Work Environment with Manjaro
 ---
 
 This is a record about how to configure a Linux environment for work after getting a whole new pc, NOT include macOSX.
