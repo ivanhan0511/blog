@@ -63,20 +63,14 @@ and there are multiDesktop in Manjaro and macOS
 
 
 #### Configuration
-将.idea目录加入ignore清单：
-$ echo '.idea' >> .gitignore
-2
-从git中删除idea：
-$ git rm —cached -r .idea
-3
-将.gitignore文件加入git：
-$ git add .gitignore
-4
-Commit gitignore文件，将.idea从源代码仓库中删除：
-$ git commit -m '(gitignore commit and remove .idea)'
-5
-Push到服务器：
- $ git push
+- 将.idea目录加入ignore清单：
+  ```shell
+  echo '.idea' >> .gitignore
+  git rm —cached -r .idea
+  git add .gitignore
+  git commit -m '(gitignore commit and remove .idea)'
+  git push
+  ```
 
 
 ### VirtualBox
