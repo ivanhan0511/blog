@@ -84,10 +84,90 @@ Some tips about  PostgreSQL in three different systems and the differences are `
   > listen_addresses = '\*'
 
 
-## Client
+## Operations
+---
+### Preparation
+- Login
+  ```shell
+  psql -U postgres
+  ```
+- Setup password for user `postgres`
+  ```shell
+    \password postgres
+  ```
+- Create a DB user
+  ```shell
+  CREATE USER dbuser WITH PASSWORD 'password';
+  ```
+- Create DB which is owned by `postgres`
+  ```shell
+  CREATE DATABASE mqtt_api OWNER postgres;
+  ```
+- Grant privilege
+  ```shell
+  GRANT ALL PRIVILEGES ON DATABASE mqtt_api to postgres;
+  ```
+
+### Login example
 ```shell
-psql -U postgres
+psql -U postgres -d mqtt_api -h 127.0.0.1 -p 5432
 ```
+
+### Operations in DB
+- Create a new table
+  ```sql
+  CREATE TABLE user_tbl(name VARCHAR(20), signup_date DATE);
+  ```
+
+- Insert data
+  ```sql
+  INSERT INTO user_tbl(name, signup_date) VALUES('Tom', '2018-06-25');
+  ```
+
+- Query
+  ```sql
+  SELECT * FROM user_tbl;
+  ```
+
+- Update
+  ```shell
+  UPDATE user_tbl set name = 'Tom' WHERE name = 'Kaden';
+  ```
+
+- Delete
+  ```shell
+  DELETE FROM user_tbl WHERE name = '李四' ;
+  ```
+
+- Add column
+  ```shell
+  ALTER TABLE user_tbl ADD email VARCHAR(40);
+  ```
+
+- Insert column after a colum
+  ```shell
+  ALTER TABLE user_tbl ALTER COLUMN signup_date SET NOT NULL;
+  ```
+
+- Alter column name
+  ```shell
+  ALTER TABLE user_tbl RENAME COLUMN signup_date TO signup;
+  ```
+
+- Delete column
+  ```shell
+  ALTER TABLE user_tbl DROP COLUMN email;
+  ```
+
+- Update table name
+  ```shell
+  ALTER TABLE user_tbl RENAME TO backup_tbl;
+  ```
+
+- Delete table
+  ```shell
+  DROP TABLE IF EXISTS backup_tbl;
+  ```
 
 
 
