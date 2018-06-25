@@ -28,6 +28,12 @@ Some tips about  PostgreSQL in three different systems and the differences are `
 
 ### Create user
 - Manjaro OS
+  ```shell
+  createuser -d -P postgres
+  sudo chown postgres:postgres /var/lib/postgres/data
+  sudo mkdir /run/postgresql
+  sudo chown postgres:postgres /run/postgresql
+  ```
 
 - macOSX
   ```shell
@@ -47,12 +53,13 @@ Some tips about  PostgreSQL in three different systems and the differences are `
 ### init
 - Manjaro OS
   ```shell
-  sudo su - postgres -c 'pg_ctl -D /var/lib/postgres/data -l /var/lib/postgres/data/postgres.log start'  # Manjaro
+  sudo su - postgres -c 'pg_ctl init -D /var/lib/postgres/data -l /var/lib/postgres/data/postgres.log'
+  sudo su - postgres -c 'pg_ctl -D /var/lib/postgres/data -l /var/lib/postgres/data/postgres.log start'
   ```
 
 - macOSX
   ```shell
-  sudo su postgres -c 'pg_ctl init -D /usr/local/var/db/postgresql96/defaultdb'
+  sudo su postgres -c 'pg_ctl init -D /usr/local/var/db/postgresql96/defaultdb -l /usr/local/var/db/postgresql96/postgres.log'
   sudo su postgres -c 'pg_ctl -D /usr/local/var/db/postgresql96/defaultdb -l /usr/local/var/db/postgresql96/postgres.log start'
   ```
 
