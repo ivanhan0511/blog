@@ -10,7 +10,7 @@ Some tips about  PostgreSQL in three different systems and the differences are `
 ### Install
 - Manjaro OS
   ```shell
-  yaourt -S postgres
+  sudo yaourt -S postgres
   ```
 
 - macOSX
@@ -47,16 +47,13 @@ Some tips about  PostgreSQL in three different systems and the differences are `
 ### init
 - Manjaro OS
   ```shell
-  sudo su postgres -c 'initdb -D /var/lib/postgres/data' # In Manjaro system
   sudo su - postgres -c 'pg_ctl -D /var/lib/postgres/data -l /var/lib/postgres/data/postgres.log start'  # Manjaro
   ```
 
 - macOSX
   ```shell
-  sudo su postgres -c 'initdb -D /usr/local/var/db/postgresql96/defaultdb'
-  #sudo su postgres -c 'pg_ctl init -D /usr/local/var/db/postgresql96/defaultdb' # Use pg_ctl cli
-  sudo su postgres -c 'pg_ctl -D /usr/local/var/db/postgresql96/defaultdb start'
-  #sudo su postgres -c 'pg_ctl -D /usr/local/var/db/postgresql96/defaultdb -l /usr/local/var/db/postgresql96/postgres.log start'
+  sudo su postgres -c 'pg_ctl init -D /usr/local/var/db/postgresql96/defaultdb'
+  sudo su postgres -c 'pg_ctl -D /usr/local/var/db/postgresql96/defaultdb -l /usr/local/var/db/postgresql96/postgres.log start'
   ```
 
 - FreeBSD
@@ -93,7 +90,8 @@ psql -U postgres
 ### Export
 ```shell
 pg_dump -U USERNAME DBNAME > dbexport.pgsql
-#pg_dump -U USERNAME DBNAME -N topology -T spatial_ref_sys > dbexport.pgsql  # If with restricted access permissions
+# If with restricted access permissions
+pg_dump -U USERNAME DBNAME -N topology -T spatial_ref_sys > dbexport.pgsql  
 ```
 
 ### Import
