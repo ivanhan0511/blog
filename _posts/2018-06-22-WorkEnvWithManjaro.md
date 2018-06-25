@@ -66,7 +66,7 @@ and there are multiDesktop in Manjaro and macOS
 - 将.idea目录加入ignore清单：
   ```shell
   echo '.idea' >> .gitignore
-  git rm —cached -r .idea
+  git rm --cached -r .idea
   git add .gitignore
   git commit -m '(gitignore commit and remove .idea)'
   git push
