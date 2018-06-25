@@ -1,8 +1,9 @@
 ---
-layout: default
-title: Testing: After Installed Fedora
+layout: post
+title: After Installed Fedora Server
 ---
-### What to do after installation of Fedora Server 25
+
+Take some records about what to do after installation of Fedora Server 25
 
 
 - Disable SeLinux
