@@ -50,7 +50,7 @@ Some tips about  PostgreSQL in three different systems and the differences are `
   ```
 
 
-### init
+### init and start service
 - Manjaro OS
   ```shell
   sudo su - postgres -c 'pg_ctl init -D /var/lib/postgres/data -l /var/lib/postgres/data/postgres.log'
@@ -93,11 +93,11 @@ Some tips about  PostgreSQL in three different systems and the differences are `
   ```
 - Setup password for user `postgres`
   ```shell
-    \password postgres
+  \\password postgres
   ```
 - Create a DB user
   ```shell
-  CREATE USER dbuser WITH PASSWORD 'password';
+  CREATE USER postgres WITH PASSWORD 'your_password';
   ```
 - Create DB which is owned by `postgres`
   ```shell
@@ -105,7 +105,7 @@ Some tips about  PostgreSQL in three different systems and the differences are `
   ```
 - Grant privilege
   ```shell
-  GRANT ALL PRIVILEGES ON DATABASE mqtt_api to postgres;
+  GRANT ALL ON DATABASE mqtt_api to postgres;
   ```
 
 ### Login example
@@ -130,43 +130,48 @@ psql -U postgres -d mqtt_api -h 127.0.0.1 -p 5432
   ```
 
 - Update
-  ```shell
+  ```sql
   UPDATE user_tbl set name = 'Tom' WHERE name = 'Kaden';
   ```
 
 - Delete
-  ```shell
+  ```sql
   DELETE FROM user_tbl WHERE name = '李四' ;
   ```
 
 - Add column
-  ```shell
+  ```sql
   ALTER TABLE user_tbl ADD email VARCHAR(40);
   ```
 
 - Insert column after a colum
-  ```shell
+  ```sql
   ALTER TABLE user_tbl ALTER COLUMN signup_date SET NOT NULL;
   ```
 
 - Alter column name
-  ```shell
+  ```sql
   ALTER TABLE user_tbl RENAME COLUMN signup_date TO signup;
   ```
 
 - Delete column
-  ```shell
+  ```sql
   ALTER TABLE user_tbl DROP COLUMN email;
   ```
 
 - Update table name
-  ```shell
+  ```sql
   ALTER TABLE user_tbl RENAME TO backup_tbl;
   ```
 
 - Delete table
-  ```shell
+  ```sql
   DROP TABLE IF EXISTS backup_tbl;
+  ```
+
+- Delete database
+  ```sql
+  DROP DATABASE guest;
   ```
 
 
