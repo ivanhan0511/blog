@@ -6,8 +6,6 @@ title: Work Environment Rebuild
 This is a record about how to configure a Linux environment for work after getting a whole new pc, NOT include macOSX.
 
 ## Basic configuration
----
-
 ### SSH Key
 - Generate SSH key if needed
   ```shell
@@ -56,7 +54,6 @@ and there are multiDesktop in Manjaro and macOS
 
 
 ## PyCharm Pro
----
 ### Installation
 - PyCharm Pro
   `https://blog.csdn.net/u014044812/article/details/78727496`
@@ -74,8 +71,6 @@ and there are multiDesktop in Manjaro and macOS
 
 
 ## VirtualBox
----
-
 VirtualBox
 it will show something like this Linux user 4.6.0-1-MANJARO #1 SMP PREEMPT Mon May 16 02:44:59 2016 x86_64 GNU/Linux
 In bold is your kernel version, so install the virtualbox host modules for your kernel number replacing 46 with what your output showed from the above.
