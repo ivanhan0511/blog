@@ -39,6 +39,9 @@ This is a record about how to configure a Linux environment for work after getti
   sudo pacman -S fcitx-im
   sudo pacman -S fcitx-configtool
   ```
+#### 4Level
+  - maybe need a long time
+
 - Add content below into `~/.xprofile` or `~/.extend.xprofile`
   > export GTK_IM_MODULE=fcitx
   > export QT_IM_MODULE=fcitx
