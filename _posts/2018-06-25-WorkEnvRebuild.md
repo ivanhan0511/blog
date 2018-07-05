@@ -31,7 +31,7 @@ This is a record about how to configure a Linux environment for work after getti
   ```
 
 ### Vim
-- Get ready a `.vimrc`
+- Get ready a `.vimrc`  
   TODO: make a share link.
 
 ### Input method

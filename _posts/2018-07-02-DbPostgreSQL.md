@@ -56,6 +56,12 @@ Some tips about  PostgreSQL in three different systems and the differences are `
   sudo su - postgres -c 'pg_ctl init -D /var/lib/postgres/data -l /var/lib/postgres/data/postgres.log'
   sudo su - postgres -c 'pg_ctl -D /var/lib/postgres/data -l /var/lib/postgres/data/postgres.log start'
   ```
+  If a fatal occurred like this `FATAL:  could not create lock file "/run/postgresql/.s.PGSQL.5432.lock": No such file or directory`
+  ```shell
+  sudo mkdir /run/postgresql
+  sudo chown postgres:postgres /run/postgresql
+  ```
+
 
 - macOSX
   ```shell
