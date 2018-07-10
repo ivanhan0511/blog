@@ -22,20 +22,30 @@ Wait for a moment and it is done.
 sudo nextcloud.enable-https self-signed
 ```
 
-### Change data path if needed
+### Configuration
 ```shell
-cd /var/snap/nextcloud/current/nextcloud/config/
-vi config.php
+sudo vi /var/snap/nextcloud/current/nextcloud/config/config.php
 ```
->  'datadirectory' => '/var/snap/nextcloud/common/nextcloud/data' 
 
+#### Change data storage path if needed
+> 'datadirectory' => '/var/snap/nextcloud/common/nextcloud/data' 
 
+#### Change database service if needed
+> 'dbname' => 'nextcloud',
+> 'dbhost' => '192.168.1.xxx:/var/run/mysqld/mysqld.sock',
+> 'dbuser' => 'nextcloud',
+> 'dbpassword' => 'xxx',
 
 
 ## Checkout
 ---
 - 查看进程：`ps aux | grep nextcloud`
-
 - 停止服务：`sudo systemctl stop snap.nextcloud.xxx`，其中包含apache、mysql、php等服务
+- 日志：
+  ```shell
+  cd /var/snap/nextcloud/current/apache/
+  sudo ls logs/
+  sudo cat logs/error_log
+  ```
 
 

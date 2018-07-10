@@ -3,7 +3,7 @@ layout: post
 title: Pressure Testing
 ---
 
-High privilege with `stres` and `nmon`
+High privilege with `stress` and `nmon`
 
 #### Installation
 ```shell
