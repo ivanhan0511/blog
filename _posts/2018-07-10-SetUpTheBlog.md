@@ -14,18 +14,21 @@ Done!
 
 ## Markdown Rules
 ---
-### Title
-Title is just title
-
-
 ### Content
-#### Capture
+Some details rules for content.
+
+#### Header level
 - Capture starts with `#header-2`
 - Node starts with `#header-3`
 - If needed, add a `#header-4`  
   If there is no blank line, level 4 is indented
 
-without 2 spaces.  hello
+#### Paragraph
+- Wrap lines with 2 spaces
+- Change paragraph with 1 blank line.
+
+#### Important words
+If there are some important words, with bold.
 
 
 ### Questions
