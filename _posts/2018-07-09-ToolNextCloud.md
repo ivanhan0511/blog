@@ -12,7 +12,6 @@ High privilege with `stres` and `nmon`
 sudo apt update
 sudo snap install nextcloud
 ```
-
 ### Activate
 Open a browser of `http://host_ip` and set a username and password.
 Wait for a moment and it is done.
@@ -26,10 +25,8 @@ sudo nextcloud.enable-https self-signed
 ```shell
 sudo vi /var/snap/nextcloud/current/nextcloud/config/config.php
 ```
-
 #### Change data storage path if needed
 > 'datadirectory' => '/var/snap/nextcloud/common/nextcloud/data' 
-
 #### Change database service if needed
 > 'dbname' => 'nextcloud',
 > 'dbhost' => '192.168.1.xxx:/var/run/mysqld/mysqld.sock',
