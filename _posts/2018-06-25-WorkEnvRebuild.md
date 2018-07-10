@@ -33,6 +33,8 @@ This is a record about how to configure a Linux environment for work after getti
 ### Vim
 - Get ready a `.vimrc`  
   TODO: make a share link.
+#### test
+- hoho
 
 ### Input method
 - fcitx-sogoupinyin
@@ -43,10 +45,13 @@ This is a record about how to configure a Linux environment for work after getti
 #### 4Level
   - maybe need a long time
 
-- Add content below into `~/.xprofile` or `~/.extend.xprofile`
+- Add content below into `~/.xprofile` or `~/.extend.xprofile`, if not exists, create.
   > export GTK_IM_MODULE=fcitx
   > export QT_IM_MODULE=fcitx
   > export XMODIFIERS="@im=fcitx"
+#### 4level
+- 1
+- 2
 
 ### MultiDisplay
 Actually, it is not really need multiDiskplay, because thereis no desktop in FreeBSD
