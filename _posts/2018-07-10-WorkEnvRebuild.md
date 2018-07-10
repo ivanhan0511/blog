@@ -33,12 +33,23 @@ This is a record about how to configure a Linux environment for work after getti
 ### Vim
 - Get ready a `.vimrc`  
   TODO: make a share link.
+
 ### Test
-Test body
+1 blank line
+
 #### test
 4level test text
 - hoho
 - HOHO
+
+
+### 2 blank lines
+2 blank lines
+
+
+#### test
+2 blank lines
+
 
 ### Input method
 - fcitx-sogoupinyin
