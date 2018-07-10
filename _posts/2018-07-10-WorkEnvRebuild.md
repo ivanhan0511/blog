@@ -42,13 +42,14 @@ This is a record about how to configure a Linux environment for work after getti
 - hoho
 - HOHO
 
+#### 缩进
+缩进
 
 ### 2 blank lines
-2 blank lines
-
-
+- no blank line
 #### test
 2 blank lines
+- no blank line
 
 
 ### Input method
