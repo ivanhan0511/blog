@@ -22,8 +22,9 @@ Title is just title
 #### Capture
 - Capture starts with `#header-2`
 - Node starts with `#header-3`
-- If needed, add a `#header-4`
+- If needed, add a `#header-4`  
   If there is no blank line, level 4 is indented
+without 2 spaces.
 
 
 ### Questions
