@@ -3,7 +3,7 @@ layout: post
 title: NextCloud
 ---
 
-High privilege with `stres` and `nmon`
+A new type of installing nextcloud on Ubuntu Server 18.04.
 
 ## Installation
 ---
