@@ -5,14 +5,14 @@ title: Work Environment Rebuild
 
 This is a record about how to configure a Linux environment for work after getting a whole new pc, NOT include macOSX.
 
-- [A](#a)
+- [Caputure 1](#a)
   - [A 1](#a-1)
   - [A 2](#a-2)
     - [A 2 a](#a-2-a)
     - [A 2 b](#a-2-b)
-- [B](#b)
+- [Capture 2](#b)
 
-# A
+# Capture 1
 sldjfl
 
 ## A 1
@@ -27,20 +27,19 @@ sldjfls
 ### A 2 b
 skldjfl
 
-# B
+# capture 2
 bbbbbbbbbbbbb
 
-
-## Basic configuration
+## [](#header-2)Basic configuration
 ---
-### SSH Key
+### [](#header-3)SSH Key
 - Generate SSH key if needed
   ```shell
   ssh-keygen -t rsa -b 4096
   ```
 
 
-### Shell
+### [](#header-3)Shell
 - Change `bash` to `zsh`, without `sudo`. If it is after `sudo`, it changed shell of root user, not current user.
   ```shell
   chsh -s $(which zsh)
