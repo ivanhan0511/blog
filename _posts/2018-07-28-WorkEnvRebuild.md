@@ -3,7 +3,12 @@ layout: post
 title: Work Environment Rebuild
 ---
 
-This is a record about how to configure a Linux environment for work after getting a whole new pc, NOT include macOSX.
+This is a record about how to configure a Linux environment for work after getting a whole new pc.  
+And this post is based on Manjaro i3-wm.
+
+Here we go!
+
+
 ## Catalogue
 - [Basic Configuration](#basic-configuration)
   - [SSH Key](#ssh-key)
