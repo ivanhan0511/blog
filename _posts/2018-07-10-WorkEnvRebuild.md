@@ -5,6 +5,32 @@ title: Work Environment Rebuild
 
 This is a record about how to configure a Linux environment for work after getting a whole new pc, NOT include macOSX.
 
+- [A](#a)
+  - [A 1](#a-1)
+  - [A 2](#a-2)
+    - [A 2 a](#a-2-a)
+    - [A 2 b](#a-2-b)
+- [B](#b)
+
+# A
+sldjfl
+
+## A 1
+skdljfl
+
+## A 2
+sdlkjf
+
+### A 2 a
+sldjfls
+
+### A 2 b
+skldjfl
+
+# B
+bbbbbbbbbbbbb
+
+
 ## Basic configuration
 ---
 ### SSH Key
@@ -85,4 +111,20 @@ Now load your virtualbox module
 sudo /sbin/rcvboxdrv setup
 Virtualbox should run normally now - if not, use pamac and uninstall anything related to virtualbox then just install the 'virtualbox' package and it will do the above for you if you tell it the kernel version you are using
 http://idea.iteblog.com/key.php
+
+
+## Remote
+---
+### virt-manager
+Maybe there is a bug of virt-manager in Manjaro-i3wm that 'You need to install openssh-askpass or similar to connect to this host'  
+So resolvation is `sudo virt-manager –no-fork`
+
+This worked, but have to open a terminal to run command as above.
+
+And then another post get this problem done:
+> If you use gnome-shell, install the package x11-ssh-askpass instead of openssh-askpass and the problem is solved
+```shell
+yaourt -S x11-ssh-askpass
+```
+Even still a little ugly, but it works.
 

@@ -17,6 +17,11 @@ apt install nmon
 ### usage examples
 `https://www.hi-linux.com/posts/59095.html`
 
+产生3个cpu进程、3个io进程、2个10M的malloc()/free()进程，并且vm进程中malloc的字节不释放  
+本次测试用来压内存的
+```shell
+stress --cpu 3 --io 3 --vm 2 --vm-bytes 10000000 --vm-keep --verbose
+```
 
 ## nmon
 ---
