@@ -11,7 +11,7 @@ This is a record about how to configure a Linux environment for work after getti
 - [PyCharm Pro](#pycharm-pro)
 - [VirtualBox](#virtualbox)
 - [Remote](#remote)
-  -[virt-manager](#virt-manager)
+  - [virt-manager](#virt-manager)
 
 
 ## Basic configuration
