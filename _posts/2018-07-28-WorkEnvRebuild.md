@@ -23,7 +23,7 @@ This is a record about how to configure a Linux environment for work after getti
   ```
 
 
-### [](#header-3)Shell
+### Shell
 - Change `bash` to `zsh`, without `sudo`. If it is after `sudo`, it changed shell of root user, not current user.
   ```shell
   chsh -s $(which zsh)
