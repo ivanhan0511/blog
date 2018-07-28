@@ -5,12 +5,16 @@ title: Work Environment Rebuild
 
 This is a record about how to configure a Linux environment for work after getting a whole new pc, NOT include macOSX.
 
-- [Caputure 1](#a)
+- [Caputure 1](#capture)
   - [A 1](#a-1)
   - [A 2](#a-2)
     - [A 2 a](#a-2-a)
     - [A 2 b](#a-2-b)
-- [Capture 2](#b)
+- [Capture 2](#capture-2)
+- [Basic Configuration](#basic_configuration)
+  - [SSH Key](#ssh_key)
+  - [Shell](#shell)
+
 
 # Capture 1
 sldjfl
