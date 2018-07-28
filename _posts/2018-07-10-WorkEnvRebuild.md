@@ -9,8 +9,8 @@ This is a record about how to configure a Linux environment for work after getti
   - [A 1](#a-1)
   - [A 2](#a-2)
     - [A 2 a](#a-2-a)
-    - [last config 01](#last-config-01)
-    - [last  config 02](#last-config-02)
+    - [last config 01 ooo](#last-config-01)
+    - [last Xconfig 02](#last-yconfig-02)
 - [Capture 2](#capture-2)
 - [Basic Configuration](#basic-configuration)
   - [SSH Key](#ssh-key)
@@ -29,10 +29,10 @@ sdlkjf
 ### A 2 a
 sldjfls
 
-### last config 01
+### last config 01 ooo
 skldjfl
 
-### last Config 02
+### last YConfig 02
 skldjfl
 
 # capture 2
