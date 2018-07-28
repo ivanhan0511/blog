@@ -4,43 +4,19 @@ title: Work Environment Rebuild
 ---
 
 This is a record about how to configure a Linux environment for work after getting a whole new pc, NOT include macOSX.
-
-- [Caputure 1](#capture_1)
-  - [A 1](#a-1)
-  - [A 2](#a-2)
-    - [A 2 a](#a-2-a)
-    - [last config 01 ooo](#last-config-01)
-    - [last Xconfig 02](#last-yconfig-02)
-- [Capture 2](#capture-2)
+## Catalogue
 - [Basic Configuration](#basic-configuration)
   - [SSH Key](#ssh-key)
   - [Shell](#shell)
+- [PyCharm Pro](#pycharm-pro)
+- [VirtualBox](#virtualbox)
+- [Remote](#remote)
+  -[virt-manager](#virt-manager)
 
 
-# Capture 1
-sldjfl
-
-## A 1
-skdljfl
-
-## A 2
-sdlkjf
-
-### A 2 a
-sldjfls
-
-### last config 01 ooo
-skldjfl
-
-### last YConfig 02
-skldjfl
-
-# capture 2
-bbbbbbbbbbbbb
-
-## [](#header-2)Basic configuration
+## Basic configuration
 ---
-### [](#header-3)SSH Key
+### SSH Key
 - Generate SSH key if needed
   ```shell
   ssh-keygen -t rsa -b 4096
@@ -88,6 +64,8 @@ and there are multiDesktop in Manjaro and macOS
   ```shell
   xrandr --auto --output DP1 --mode 1920x1080 --right-of HDMI1
   ```
+  
+[Back to catalogue](#catalogue)
 
 
 ## PyCharm Pro
@@ -107,6 +85,8 @@ and there are multiDesktop in Manjaro and macOS
   git push
   ```
 
+[Back to catalogue](#catalogue)
+
 
 ## VirtualBox
 ---
@@ -118,6 +98,8 @@ Now load your virtualbox module
 sudo /sbin/rcvboxdrv setup
 Virtualbox should run normally now - if not, use pamac and uninstall anything related to virtualbox then just install the 'virtualbox' package and it will do the above for you if you tell it the kernel version you are using
 http://idea.iteblog.com/key.php
+
+[Back to catalogue](#catalogue)
 
 
 ## Remote
@@ -135,3 +117,4 @@ yaourt -S x11-ssh-askpass
 ```
 Even still a little ugly, but it works.
 
+[Back to catalogue](#catalogue)
