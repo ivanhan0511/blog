@@ -13,6 +13,7 @@ sudo apt update
 sudo snap install nextcloud
 ```
 
+
 ### Activate
 Open a browser of `http://host_ip` and set a username and password.
 Wait for a moment and it is done.
@@ -21,6 +22,7 @@ Wait for a moment and it is done.
 ```shell
 sudo nextcloud.enable-https self-signed
 ```
+
 
 ### Configuration
 ```shell
@@ -36,6 +38,22 @@ sudo vi /var/snap/nextcloud/current/nextcloud/config/config.php
   > 'dbpassword' => 'xxx',
 
 
+### Import external DB
+Mysql Index column size too large错误解决方案
+
+mysql在执行脚本时，报出了以下错误：
+> index column size too large. the maximum column size is 767 bytes
+
+解决方案：
+- 对数据库进行设置
+  ```shell
+  set global innodb_file_format = BARRACUDA;
+  set global innodb_large_prefix = ON;
+  ```
+- 对脚本进行修改，添加`ROW_FORMAT=DYNAMIC`
+> create table test (........) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+
+
 ## Checkout
 ---
 - 查看进程：`ps aux | grep nextcloud`
@@ -46,5 +64,4 @@ sudo vi /var/snap/nextcloud/current/nextcloud/config/config.php
   sudo ls logs/
   sudo cat logs/error_log
   ```
-
 
