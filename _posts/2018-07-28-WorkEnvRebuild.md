@@ -61,6 +61,9 @@ Here we go!
   > export QT_IM_MODULE=fcitx
   > export XMODIFIERS="@im=fcitx"
 
+- Find and install a plugin of `vim-fcitx` in the packmanager  
+  Like always typing English in normal mode, but Chinese in insert mode.
+
 
 ### MultiDisplay
 Actually, it is not really need multiDiskplay, because thereis no desktop in FreeBSD
