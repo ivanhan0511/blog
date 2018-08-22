@@ -108,7 +108,17 @@ To fix this bug:
 yaourt -S mqttfx-bin
 ```
 When pop a prompt, edit the BUILD file and remove the `'!upx'`  
-Continue.
+
+After installation, `mod + d` could not involed the `/opt/MQTTfx/MQTTfx`  
+```shell
+ll /usr/bin/mqttfx
+lrwxrwxrwx 1 root root 18 Aug 22 16:36 /usr/bin/mqttfx -> /opt/mqttfx/mqttfx
+```
+I just had a try, but it worked:
+```shell
+sudo rm /usr/bin/mqttfx
+sudo ln -s /opt/MQTTfx/MQTTfx /usr/bin/mqttfx
+```
 
 [Back to catalogue](#catalogue)
 
