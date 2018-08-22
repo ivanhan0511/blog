@@ -14,6 +14,7 @@ Here we go!
   - [SSH Key](#ssh-key)
   - [Shell](#shell)
 - [PyCharm Pro](#pycharm-pro)
+- [MQTT](#MQTT)
 - [VirtualBox](#virtualbox)
 - [Remote](#remote)
   - [virt-manager](#virt-manager)
@@ -95,6 +96,21 @@ and there are multiDesktop in Manjaro and macOS
 
 [Back to catalogue](#catalogue)
 
+
+## MQTT
+---
+MQTT.fx is a nice tool to debug.  
+But it may be stopped by an error: `ERROR: options array contains unknown option '!upx'`
+
+To fix this bug:
+```shell
+# NOT with sudo
+yaourt -S mqttfx-bin
+```
+When pop a prompt, edit the BUILD file and remove the `'!upx'`  
+Continue.
+
+[Back to catalogue](#catalogue)
 
 ## VirtualBox
 ---
