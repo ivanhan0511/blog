@@ -14,7 +14,7 @@ Here we go!
   - [SSH Key](#ssh-key)
   - [Shell](#shell)
 - [PyCharm Pro](#pycharm-pro)
-- [MQTT](#MQTT)
+- [MQTT](#mqtt)
 - [VirtualBox](#virtualbox)
 - [Remote](#remote)
   - [virt-manager](#virt-manager)
@@ -112,13 +112,16 @@ When pop a prompt, edit the BUILD file and remove the `'!upx'`
 After installation, `mod + d` could not involed the `/opt/MQTTfx/MQTTfx`  
 ```shell
 ll /usr/bin/mqttfx
-lrwxrwxrwx 1 root root 18 Aug 22 16:36 /usr/bin/mqttfx -> /opt/mqttfx/mqttfx
 ```
+> lrwxrwxrwx 1 root root 18 Aug 22 16:36 /usr/bin/mqttfx -> /opt/mqttfx/mqttfx
+
 I just had a try, but it worked:
 ```shell
 sudo rm /usr/bin/mqttfx
 sudo ln -s /opt/MQTTfx/MQTTfx /usr/bin/mqttfx
+ll /usr/bin/mqttfx 
 ```
+> lrwxrwxrwx 1 root root 18 Aug 22 18:49 /usr/bin/mqttfx -> /opt/MQTTfx/MQTTfx
 
 [Back to catalogue](#catalogue)
 
