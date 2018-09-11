@@ -10,8 +10,8 @@ layout: home
 
 All right, here we go!
 
-- [Work environment rebuild](#work-environment-rebuild)
-- [Set up the blog](#set-up-the-blog)
-- [PostgreSQL](#postgresql)
+- [Work environment rebuild](_posts/2018-09-11-WorkEnvRebuild.md)
+- [Set up the blog]()
+- [PostgreSQL]()
 
 
