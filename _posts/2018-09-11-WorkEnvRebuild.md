@@ -14,7 +14,7 @@ Here we go!
   - [SSH Key](#ssh-key)
   - [Shell](#shell)
 - [PyCharm Pro](#pycharm-pro)
-- [MQTT](#mqtt)
+- [MQTTfx](#mqttfx)
 - [VirtualBox](#virtualbox)
 - [Remote](#remote)
   - [virt-manager](#virt-manager)
@@ -97,7 +97,7 @@ and there are multiDesktop in Manjaro and macOS
 [Back to catalogue](#catalogue)
 
 
-## MQTT
+## MQTTfx
 ---
 MQTT.fx is a nice tool to debug.  
 But it may be stopped by an error: `ERROR: options array contains unknown option '!upx'`
@@ -149,6 +149,7 @@ This worked, but have to open a terminal to run command as above.
 
 And then another post get this problem done:
 > If you use gnome-shell, install the package x11-ssh-askpass instead of openssh-askpass and the problem is solved
+
 ```shell
 yaourt -S x11-ssh-askpass
 ```
