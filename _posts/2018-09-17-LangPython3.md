@@ -4,6 +4,11 @@ title: Python3
 ---
 
 
+Here are some short posts about Python3 skills.
+
+And maybe add them into gitbook later.
+
+
 ## Python __private(self)的轧压
 ---
 'http://greybeard.iteye.com/blog/1355216'
