@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Work Environment Rebuild
+title: WorkEnv Manjaro Rebuild
 ---
 
 This is a record about how to configure a Linux environment for work after getting a whole new pc.  
@@ -10,6 +10,7 @@ Here we go!
 
 
 ## Catalogue
+---
 - [Basic Configuration](#basic-configuration)
   - [SSH Key](#ssh-key)
   - [Shell](#shell)
