@@ -67,7 +67,7 @@ Here we go!
 - Add content below into `~/.xprofile` or `~/.extend.xprofile`, if not exists, create it.
   > export GTK_IM_MODULE=fcitx  
   > export QT_IM_MODULE=fcitx  
-  > export XMODIFIERS="@im=fcitx"
+  > export XMODIFIERS="@im=fcitx"  
   > export LC_CTYPE="zh_CN.UTF-8"
 
 - Find and install a plugin of `vim-fcitx` in the packmanager  
