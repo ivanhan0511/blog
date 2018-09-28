@@ -23,14 +23,20 @@ Here we go!
 
 ## Basic configuration
 ---
-### SSH Key
+### profile
+- Configure the default editor and web browser
+  ```shell
+  vi ~/.profile
+  ```
+  > export EDITOR=/usr/bin/vim  
+  > export BROWSER=/usr/bin/firefox
+
+
+### Shell
 - Generate SSH key if needed
   ```shell
   ssh-keygen -t rsa -b 4096
   ```
-
-
-### Shell
 - Change `bash` to `zsh`, without `sudo`. If it is after `sudo`, it changed shell of root user, not current user.
   ```shell
   chsh -s $(which zsh)
@@ -43,7 +49,7 @@ Here we go!
 
 - Install `z`, follow the steps in README
   ```shell
-  git clone git@github.com:rupa/z.git
+  git clone https://github.com/rupa/z.git
   ```
 
 ### Vim
@@ -59,9 +65,10 @@ Here we go!
   ```
 
 - Add content below into `~/.xprofile` or `~/.extend.xprofile`, if not exists, create it.
-  > export GTK_IM_MODULE=fcitx
-  > export QT_IM_MODULE=fcitx
+  > export GTK_IM_MODULE=fcitx  
+  > export QT_IM_MODULE=fcitx  
   > export XMODIFIERS="@im=fcitx"
+  > export LC_CTYPE="zh_CN.UTF-8"
 
 - Find and install a plugin of `vim-fcitx` in the packmanager  
   Like always typing English in normal mode, but Chinese in insert mode.
@@ -81,8 +88,7 @@ and there are multiDesktop in Manjaro and macOS
 ## PyCharm Pro
 ---
 ### Installation
-- PyCharm Pro
-  `https://blog.csdn.net/u014044812/article/details/78727496`
+- Get activation code of PyCharm Pro at `https://blog.csdn.net/u014044812/article/details/78727496`
 
 
 ### Configuration
