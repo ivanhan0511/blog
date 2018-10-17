@@ -3,7 +3,7 @@ layout: post
 title: WorkEnv Manjaro Rebuild
 ---
 
-This is a record about how to configure a Linux environment for work after getting a whole new pc.  
+This is a record about how to configure a Linux environment for work after getting a whole new PC.  
 And this post is based on Manjaro i3-wm.
 
 Here we go!
@@ -37,7 +37,7 @@ Here we go!
   ```shell
   ssh-keygen -t rsa -b 4096
   ```
-- Change `bash` to `zsh`, without `sudo`. If it is after `sudo`, it changed shell of root user, not current user.
+- Change `bash` to `zsh`, **WITHOUT** `sudo`. If it is after `sudo`, it changed shell of root user, not current user.
   ```shell
   chsh -s $(which zsh)
   ```
@@ -47,14 +47,24 @@ Here we go!
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   ```
 
-- Install `z`, follow the steps in README
+- Install `z`
   ```shell
   git clone https://github.com/rupa/z.git
   ```
+  Add `. ~/path/to/z/z.sh` into `~/.zshrc`
+
 
 ### Vim
 - Get ready a `.vimrc`  
   TODO: make a share link.
+
+- Install Vundle.vim
+  ```shell
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  ```
+
+- Open a file with `vim` and install plugins
+  > :PluginInstall
 
 
 ### Input method
@@ -85,6 +95,17 @@ and there are multiDesktop in Manjaro and macOS
 [Back to catalogue](#catalogue)
 
 
+## Browser
+---
+- Firefox
+  ```shell
+  yaourt -S firefox
+  ```
+
+[Back to catalogue](#catalogue)
+
+
+
 ## PyCharm Pro
 ---
 ### Installation
@@ -102,6 +123,7 @@ and there are multiDesktop in Manjaro and macOS
   ```
 
 [Back to catalogue](#catalogue)
+
 
 
 ## MQTTfx
@@ -126,11 +148,13 @@ I just had a try, but it worked:
 ```shell
 sudo rm /usr/bin/mqttfx
 sudo ln -s /opt/MQTTfx/MQTTfx /usr/bin/mqttfx
+
 ll /usr/bin/mqttfx 
 ```
 > lrwxrwxrwx 1 root root 18 Aug 22 18:49 /usr/bin/mqttfx -> /opt/MQTTfx/MQTTfx
 
 [Back to catalogue](#catalogue)
+
 
 ## VirtualBox
 ---
