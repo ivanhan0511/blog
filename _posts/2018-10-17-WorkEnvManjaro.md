@@ -187,3 +187,24 @@ yaourt -S x11-ssh-askpass
 Even still a little ugly, but it works.
 
 [Back to catalogue](#catalogue)
+
+
+## Office
+---
+LibreOffice
+```shell
+yaourt -S libreoffice
+```
+
+[Back to catalogue](#catalogue)
+
+
+## Mind map
+---
+XMind
+```shell
+yaourt -S xmind
+```
+
+[Back to catalogue](#catalogue)
+
