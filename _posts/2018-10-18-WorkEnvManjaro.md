@@ -22,6 +22,7 @@ Here we go!
   - [PyCharm Pro](#pycharm-pro)
   - [Franz](#franz)
   - [ThunderBird](#thunderbird)
+  - [Typora](#typora)
   - [Remmina](#remmina)
   - [MQTTfx](#mqttfx)
   - [VirtualBox](#virtualbox)
@@ -75,6 +76,7 @@ Here we go!
   ```
 
 - Open a file with `vim` and install plugins
+
   > :PluginInstall
 
 
@@ -92,7 +94,12 @@ Here we go!
   > export GTK_IM_MODULE=fcitx  
   > export QT_IM_MODULE=fcitx  
   > export XMODIFIERS="@im=fcitx"  
-  > export LC_CTYPE="zh_CN.UTF-8"
+  > \# Below is a bug fix, maybe try to delete this line next version
+  > fcitx -d -r --enable sogou-qimpanel
+
+- Bug fix
+  Unable to start? Try `rm -rf ~/.sogouinput`
+  Still not working? Try `rm -rf ~/.sogouinput ~/.config/SogouPY*` and re-login.
 
 - Find and install a plugin of `vim-fcitx` in the packmanager  
   Like always typing English in normal mode, but Chinese in insert mode.
@@ -145,7 +152,17 @@ yaourt -S thunderbird
 ```
 
 
+
+### Typora
+
+```shell
+yaourt -S typora
+```
+
+
+
 ### Remmina
+
 ```shell
 yaourt -S remmina
 ```
