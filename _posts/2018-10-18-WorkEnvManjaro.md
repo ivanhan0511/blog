@@ -94,7 +94,7 @@ Here we go!
   > export GTK_IM_MODULE=fcitx  
   > export QT_IM_MODULE=fcitx  
   > export XMODIFIERS="@im=fcitx"  
-  > \# Below is a bug fix, maybe try to delete this line next version
+  > \# Below is a bug fix, maybe try to delete this line next version  
   > fcitx -d -r --enable sogou-qimpanel
 
 - Bug fix
