@@ -140,9 +140,9 @@ yaourt -S firefox
 [Back to catalogue](#catalogue)
 
 
-### Franz
+### WeChat
 ```shell
-yaourt -S franz-bin
+yaourt -S electronic-wechat
 ```
 
 
@@ -164,7 +164,7 @@ yaourt -S typora
 ### Remmina
 
 ```shell
-yaourt -S remmina
+yaourt -S remmina remmina-plugin-rdesktop
 ```
 
 
