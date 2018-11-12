@@ -5,6 +5,8 @@ title: Mount Disk of iSCSI which in FreeNAS
 
 First, install FreeNAS on a server and finish configurations on the web, like storage, sharing and service and so on.
 
+> http://blog.51cto.com/wjcaiyf/1607682
+
 Second, install `open-iscsi` on a target machine(maybe a client or a server)
 > http://www.linuxdiyf.com/linux/31462.html
 
