@@ -34,4 +34,5 @@ Take some records about what to do after installation of Fedora Server 25
   # AliYun
   sudo wget -O /etc/yum.repos.d/fedora.repo http://mirrors.aliyun.com/repo/fedora.repo
   sudo wget -O /etc/yum.repos.d/fedora-updates.repo http://mirrors.aliyun.com/repo/fedora-updates.repo
+  yum makecache
   ```
