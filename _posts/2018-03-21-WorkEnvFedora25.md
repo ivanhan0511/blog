@@ -24,3 +24,14 @@ Take some records about what to do after installation of Fedora Server 25
   ```shell
   reboot
   ```
+
+- Update yum repository
+  https://blog.csdn.net/javafoam/article/details/78992486
+
+  ```shell
+  sudo dnf install yum-fastestmirror
+  cd /etc/yum.repos.d
+  # AliYun
+  sudo wget -O /etc/yum.repos.d/fedora.repo http://mirrors.aliyun.com/repo/fedora.repo
+  sudo wget -O /etc/yum.repos.d/fedora-updates.repo http://mirrors.aliyun.com/repo/fedora-updates.repo
+  ```
