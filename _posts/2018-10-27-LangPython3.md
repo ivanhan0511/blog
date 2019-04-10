@@ -38,3 +38,8 @@ And maybe add them into gitbook later.
     这四大组件的关系是，一个ioloop包含多个app(管理多个服务端口)，一个app包含一个路由表，一个路由表包含多个handler。ioloop是服务的引擎核心，它是发动机，负责接收和响应客户端请求，负责驱动业务handler的运行，负责服务器内部定时任务的执行。
     当一个请求到来时，ioloop读取这个请求解包成一个http请求对象，找到该套接字上对应app的路由表，通过请求对象的url查询路由表中挂接的handler，然后执行handler。handler方法执行后一般会返回一个对象，ioloop负责将对象包装成http响应对象序列化发送给客户端。
     同一个ioloop实例运行在一个单线程环境下。
+
+## file, path, dir
+> https://blog.csdn.net/weixin_40849273/article/details/85329483
+
+
