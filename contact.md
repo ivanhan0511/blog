@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Contact
-tagline: Create a contact form and you are good to go
+tagline: Welcome to touch me as below :D
 ---
 
-1. [Ivan in github](https://github.com/ivanhan0511)
+[Github](https://github.com/ivanhan0511)
+[EMail](ivan0511@icloud.com)
 
 
 [Go to the Home Page]({{ site.url }}{{ site.baseurl }})

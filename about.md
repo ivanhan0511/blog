@@ -5,6 +5,6 @@ tagline: A few more words about me
 permalink: /about.html
 ---
 
-A newbie
+Mere motal!
 
 [Go to the Home Page]({{ site.url }}{{ site.baseurl }})
