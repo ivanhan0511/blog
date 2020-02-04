@@ -6,7 +6,9 @@ permalink: /about.html
 ---
 
 Good Day!
+
 Long-term available of updates for Python, OpenStack, Swift and Coffee!
+
 Hope helpfull :D
 
 
