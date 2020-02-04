@@ -4,10 +4,10 @@ title: Contact
 tagline: Welcome to touch me as below :D
 ---
 
-[Github](https://github.com/ivanhan0511)
+[Ivan's Github](https://github.com/ivanhan0511)
 <br>
 ivan0511@icloud.com
 
 
 
-[Go to the Home Page]({{ site.url }}{{ site.baseurl }})
+[Home Page]({{ site.url }}{{ site.baseurl }})

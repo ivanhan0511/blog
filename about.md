@@ -1,12 +1,13 @@
 ---
 layout: page
 title: About
-tagline: A few more words about me
+tagline: Blog mainly about Python, OpenStack, Swift and Coffee
 permalink: /about.html
 ---
 
 Good Day!
+Long-term available of updates for Python, OpenStack, Swift and Coffee!
+Hope helpfull :D
 
-This a technical blog about OpenStack, Kubernetes, IoT, AI and iOS(Swift) articles.
 
-[Go to the Home Page]({{ site.url }}{{ site.baseurl }})
+[Home Page]({{ site.url }}{{ site.baseurl }})

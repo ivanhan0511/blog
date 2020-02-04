@@ -8,5 +8,7 @@
 layout: home
 ---
 
+Good day!
+If you are interest on coding or coffee, let's talk something :)
 All right, here we go!
 
