@@ -1,24 +1,36 @@
 ---
 layout: post
-title: OpenStack(Stein) Deployment Manual
+title: OpenStack(Stein) Platform
 ---
 
-This is a record about how to configure a Linux environment for work after getting a whole new PC.  
-And this post is based on Manjaro i3-wm.
+
+A real self-cloud production with OpenStack actually is a platform, not just a PC or Server.
+
+This post shows some keypoints, while secondly developing OpenStack.
+
+So far(same date to update time), deploy OpenStack with Ubuntu + MAAS + Juju.
 
 Here we go!
 
 [toc]
 
 ## Preparation
+---
 ### Physical server
-### Network
+### Protocol
+### Physical Network
 
 
 ## MAAS
+---
 
 ## Juju
+---
 
 ## OpenStack configuration
-### Network
+---
+### Networks in OpenStack
+
+### Storage
+
 
